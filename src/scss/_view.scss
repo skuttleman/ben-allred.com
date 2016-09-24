@@ -6,22 +6,34 @@
 }
 
 .app {
-  margin-top: $HEADER-HEIGHT;
+  height: calc(100vh - #{$HEADER-HEIGHT});
+  overflow-y: auto;
+  h2 {
+    font-style: italic;
+    margin: $MAIN-MARGIN 0;
+  }
   .above-the-fold {
     color: #ddd;
     animation: fadein 1.75s;
-    height: calc(100vh - 150px);
+    height: calc(100vh - 175px);
+    min-height: 200px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    h2 {
-      font-style: italic;
-    }
+    font-size: 1.25em;
+    text-align: center;
   }
   .below-the-fold {
     min-height: calc(100vh - #{$HEADER-HEIGHT} - #{$MAIN-PADDING} - #{$MAIN-PADDING});
     padding: $MAIN-PADDING;
-    background-color: white;
+    background-color: $WHITE;
+    p {
+      text-align: justify;
+      margin: $MAIN-MARGIN 0;
+    }
+    @media(min-width: 750px) {
+      padding: $MAIN-PADDING 20%;
+    }
   }
 }

@@ -1,27 +1,97 @@
 header {
   height: $HEADER-HEIGHT;
   width: 100%;
-  top: 0;
+  // top: 0;
   display: flex;
   flex-direction: row;
   align-items: center;
-  position: fixed;
+  // position: fixed;
   z-index: 1;
   background-color: black;
-  nav {
+  .nav {
     width: 100%;
-    padding: 10px;
+    height: $HEADER-HEIGHT;
     display: flex;
     justify-content: space-between;
     box-sizing: border-box;
     ul {
       display: flex;
+      list-style: none;
+      * {
+        text-decoration: none;
+      }
+      &.links {
+        padding: $MAIN-PADDING;
+        .link-element {
+          width: 2.5rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          i {
+            font-size: 2rem;
+            color: $LIGHT-GREY;
+            transition: font-size 0.2s ease, color 0.2s ease;
+            &:hover {
+              color: $WHITE;
+              font-size: 2.5rem;
+            }
+          }
+        }
+      }
+      &.navs {
+        .nav-element {
+          height: $HEADER-HEIGHT;
+          padding: 0 10px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          transition: background-color 0.4s ease;
+          box-sizing: border-box;
+          &:hover {
+            cursor: pointer;
+          }
+          &:hover:not(.current) {
+            background-color: $WHITE;
+          }
+          &.current {
+            font-style: italic;
+            padding-right: $MAIN-PADDING;
+            * {
+              color: $WHITE;
+            }
+            &:not(:first-child) {
+              border-left: 1px $WHITE solid;
+            }
+            &:not(:last-child) {
+              border-right: 1px $WHITE solid;
+            }
+          }
+          & > * {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: $LINK-BLUE;
+            i {
+              font-size: 1.75rem;
+              @media(min-width: 750px) {
+                margin-right: $MAIN-PADDING;
+              }
+            }
+          }
+        }
+      }
     }
-  }
-
-  @media(max-width: 400px) {
-    .nav-text {
-      display: none;
+    @media(max-width: 750px) {
+      .links .link-element {
+        width: 1.5rem !important;
+      }
+      .links .link-element i.fa, .navs .nav-element i.fa {
+        font-size: 1.2rem;
+      }
+      .nav-text {
+        display: none;
+      }
     }
   }
 }
