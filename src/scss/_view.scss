@@ -1,0 +1,27 @@
+@keyframes fadein {
+  from {
+    opacity: 0;
+    height: calc(100vh - #{$HEADER-HEIGHT});
+  }
+}
+
+.app {
+  margin-top: $HEADER-HEIGHT;
+  .above-the-fold {
+    color: #ddd;
+    animation: fadein 1.75s;
+    height: calc(100vh - 150px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h2 {
+      font-style: italic;
+    }
+  }
+  .below-the-fold {
+    min-height: calc(100vh - #{$HEADER-HEIGHT} - #{$MAIN-PADDING} - #{$MAIN-PADDING});
+    padding: $MAIN-PADDING;
+    background-color: white;
+  }
+}

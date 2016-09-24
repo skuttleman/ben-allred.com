@@ -1,0 +1,28 @@
+{
+  "songs": [{
+    "title": "The Next Step",
+    "src": "/music/TheNextStep.mp3",
+    "album": 0
+  },{
+    "title": "Sworn to Secrecy",
+    "src": "/music/SwornToSecrecy.mp3",
+    "album": 1
+  },{
+    "title": "Let's Put the Past Back Together",
+    "src": "/music/LetsPutThePastBackTogether.mp3",
+    "album": 0
+  },{
+    "title": "Morning After Pill",
+    "src": "/music/MorningAfterPill.mp3",
+    "album": 1
+  }],
+  "albums": [{
+    "title": "Story of My Life",
+    "art": "/music/story-of-my-life.jpg",
+    "itunes": "https://itunes.apple.com/us/album/story-of-my-life/id444023700"
+  },{
+    "title": "Slave to Time",
+    "art": "/music/slave-to-time.jpg",
+    "itunes": "https://itunes.apple.com/us/album/slave-to-time/id276812547"
+  }]
+}

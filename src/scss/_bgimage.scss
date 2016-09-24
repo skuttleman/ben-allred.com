@@ -1,0 +1,19 @@
+.image-container {
+  width: 100vw;
+  height: calc(100vh - #{$HEADER-HEIGHT});
+  position: fixed;
+  top: $HEADER-HEIGHT;
+  left: 0px;
+  z-index: -1;
+  background-color: black;
+  .bg-image {
+    width: 100vw;
+    height: auto;
+    @media(max-width: 100vh) {
+      width: auto;
+      height: calc(100vh - #{$HEADER-HEIGHT});;
+    }
+    -webkit-filter: grayscale(85%) opacity(0.8) brightness(70%) contrast(130%);
+    filter: grayscale(85%) opacity(0.8) brightness(70%) contrast(130%);
+  }
+}

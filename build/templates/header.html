@@ -1,0 +1,21 @@
+<nav class="top-bar nav">
+  <ul class="links">
+    <li class="link-element" ng-repeat="link in links">
+      <a target="_blank" ng-href="{{link.link}}">
+        <i class="{{link.iClass}}"></i>
+      </a>
+    </li>
+  </ul>
+  <ul class="navs">
+    <li class="nav-element" ng-repeat="nav in navs" ng-class="{ current: nav.text == view }">
+      <a ng-hide="nav.text == view" ng-href="{{nav.link}}">
+        <i class="nav-icon {{nav.iClass}}"></i>
+        <span class="nav-text">{{nav.text}}</span>
+      </a>
+      <span ng-show="nav.text == view">
+        <i class="nav-icon {{nav.iClass}}"></i>
+        <span class="nav-text">{{nav.text}}</span>
+      </span>
+    </li>
+  </ul>
+</nav>

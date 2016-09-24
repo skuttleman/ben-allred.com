@@ -1,0 +1,25 @@
+<div class="above-the-fold">
+  <h1>Portfolio</h1>
+</div>
+<div class="below-the-fold">
+  <h2>My Projects</h2>
+  <ul class="projects">
+    <li class="project" ng-repeat="project in projects">
+      <h3>
+        <a class="project title" target="_blank" ng-href="{{project.link}}">{{project.title}}</a>
+        <!-- <a class="project link" target="_blank" ng-href="http://github.com/skuttleman{{project.github}}"><i class="fa fa-github-alt"></i></a> -->
+      </h3>
+      <h4>{{project.tagLine}}</h4>
+      <p>{{project.description}}</p>
+      <span>Technologies:</span>
+      <ul class="technologies">
+        <li class="technology" ng-repeat="technology in project.technologies">{{technology}}</li>
+      </ul>
+      <ul class="repos">
+        <li class="repo" ng-repeat="repo in project.repos">
+          <a target="_blank" ng-href="http://github.com/skuttleman{{repo.link}}">{{repo.name}}</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>

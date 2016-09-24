@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ben Allred - Full Stack Web Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+
+    <script type="text/javascript" src="/js/app.js"></script>
+  </head>
+  <body ng-app="portfolio" ng-cloak>
+    <div class="image-container">
+      <img class="bg-image" ng-src="{{backgroundImage}}" />
+    </div>
+    <header personal-header view="view"></header personal-header>
+    <main class="app {{view}}" ng-view></main>
+  </body>
+</html>
