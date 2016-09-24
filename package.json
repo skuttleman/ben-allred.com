@@ -1,0 +1,27 @@
+{
+  "name": "ben-allred.com",
+  "version": "1.0.0",
+  "description": "Portfolio website",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack && http-server ./build",
+    "dev": "webpack -w",
+    "style": "sass --scss --watch src/scss/main.scss:build/css/main.css"
+  },
+  "author": "skuttleman@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.5.8",
+    "angular-route": "^1.5.8"
+  },
+  "devDependencies": {
+    "babel-core": "^6.4.5",
+    "babel-eslint": "^5.0.0-beta9",
+    "babel-loader": "^6.2.2",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-react": "^6.3.13",
+    "babel-preset-stage-1": "^6.5.0",
+    "eslint": "<2.3.0",
+    "webpack": "^1.12.13"
+  }
+}
