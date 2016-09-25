@@ -1,0 +1,11 @@
+.music-player {
+  background-color: $LIGHT-GREY;
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  img {
+    height: 35px;
+  }
+}

@@ -6,27 +6,6 @@
   <p>I have written many songs.</p>
   <p>Some of those songs have been recorded.</p>
   <p>Some of those recordings are on the internet.</p>
-  <p>Some of those internets are listed here:</p>
-  <div class="music-list">
-    <div class="song-list">
-      <div>
-        <h3>Song List:</h3>
-        <ul class="songs">
-          <li class="song" ng-repeat="song in songs" ng-class="{ selected: currentSong == song }" ng-click="selectSong(song)">
-            {{song.title}}
-          </li>
-        </ul>
-      </div>
-      <audio ng-show="currentSong" class="audio-controls" controls></audio>
-    </div>
-    <figure ng-show="currentSong">
-      <a ng-href="{{currentAlbum.itunes}}" target="_blank">
-        <img class="album-cover" ng-src="{{currentAlbum.art}}" alt="album cover" />
-      </a>
-      <figcaption class="album-title">{{currentAlbum.title}}</figcaption>
-      <a ng-href="{{currentAlbum.itunes}}" target="_blank">
-        <img class="itunes-button" src="/music/itunes.png" alt="itunes button" />
-      </a>
-    </figure>
-  </div>
+  <p>Some of those internets are available here:</p>
+  <span ng-if="!showMusicPlayer" ng-click="openMusicPlayer()">Music Player</span>
 </div>
