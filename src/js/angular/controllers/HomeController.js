@@ -1,7 +1,6 @@
-export default [
-  '$scope', '$rootScope', 'loadJSON',
-  ($scope, $rootScope, loadJSON) => {
-    $rootScope.view = 'home';
-    $rootScope.backgroundImage = '/images/snow.jpg';
-  }
-];
+const HomeController = ($scope, $rootScope) => {
+  $rootScope.view = 'home';
+  $rootScope.backgroundImage = '/images/snow.jpg';
+};
+
+export default ['$scope', '$rootScope', HomeController];

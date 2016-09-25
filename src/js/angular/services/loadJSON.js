@@ -1,7 +1,3 @@
-export default ['$http', $http => {
-  return {
-    load(name) {
-      return $http.get(`/json/${name}.json`);
-    }
-  };
-}];
+export default ['$http', $http =>
+  ({ load: file => $http.get(`/json/${file}.json`) })
+];

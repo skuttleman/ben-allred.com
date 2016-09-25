@@ -1,0 +1,23 @@
+{
+  "songs": [{
+    "id": 1,
+    "title": "The Next Step",
+    "src": "/music/TheNextStep.mp3",
+    "albumId": 1
+  },{
+    "id": 2,
+    "title": "Sworn to Secrecy",
+    "src": "/music/SwornToSecrecy.mp3",
+    "albumId": 2
+  },{
+    "id": 3,
+    "title": "Let's Put the Past Back Together",
+    "src": "/music/LetsPutThePastBackTogether.mp3",
+    "albumId": 1
+  },{
+    "id": 4,
+    "title": "Morning After Pill",
+    "src": "/music/MorningAfterPill.mp3",
+    "albumId": 2
+  }]
+}

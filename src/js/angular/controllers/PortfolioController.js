@@ -1,10 +1,9 @@
-export default [
-  '$scope', '$rootScope', 'loadJSON',
-  ($scope, $rootScope, loadJSON) => {
-    $rootScope.view = 'portfolio';
-    $rootScope.backgroundImage = '/images/portfolio.jpg';
-    loadJSON.load('portfolio').then(json => {
-      $scope.projects = json.data.data;
-    });
-  }
-];
+const PortfolioController = ($scope, $rootScope, appsAPI) => {
+  $rootScope.view = 'portfolio';
+  $rootScope.backgroundImage = '/images/portfolio.jpg';
+  appsAPI.get().then(({ data }) => {
+    $scope.projects = data;
+  });
+};
+
+export default ['$scope', '$rootScope', 'appsAPI', PortfolioController];

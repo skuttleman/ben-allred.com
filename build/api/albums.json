@@ -1,0 +1,13 @@
+{
+  "albums": [{
+    "id": 1,
+    "title": "Story of My Life",
+    "art": "/music/story-of-my-life.jpg",
+    "itunes": "https://itunes.apple.com/us/album/story-of-my-life/id444023700"
+  },{
+    "id": 2,
+    "title": "Slave to Time",
+    "art": "/music/slave-to-time.jpg",
+    "itunes": "https://itunes.apple.com/us/album/slave-to-time/id276812547"
+  }]
+}

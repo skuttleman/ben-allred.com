@@ -20,11 +20,11 @@
       <audio ng-show="currentSong" class="audio-controls" controls></audio>
     </div>
     <figure ng-show="currentSong">
-      <a ng-href="{{albums[currentSong.album].itunes}}" target="_blank">
-        <img class="album-cover" ng-src="{{albums[currentSong.album].art}}" alt="album cover" />
+      <a ng-href="{{currentAlbum.itunes}}" target="_blank">
+        <img class="album-cover" ng-src="{{currentAlbum.art}}" alt="album cover" />
       </a>
-      <figcaption class="album-title">{{albums[currentSong.album].title}}</figcaption>
-      <a ng-href="{{albums[currentSong.album].itunes}}" target="_blank">
+      <figcaption class="album-title">{{currentAlbum.title}}</figcaption>
+      <a ng-href="{{currentAlbum.itunes}}" target="_blank">
         <img class="itunes-button" src="/music/itunes.png" alt="itunes button" />
       </a>
     </figure>
