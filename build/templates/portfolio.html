@@ -7,12 +7,11 @@
     <li class="project" ng-repeat="project in projects">
       <h3>
         <a class="project title" target="_blank" ng-href="{{project.link}}">{{project.title}}</a>
-        <!-- <a class="project link" target="_blank" ng-href="http://github.com/skuttleman{{project.github}}"><i class="fa fa-github-alt"></i></a> -->
       </h3>
       <h4>{{project.tagLine}}</h4>
       <p>{{project.description}}</p>
-      <span>Technologies:</span>
       <ul class="technologies">
+        <li>Technologies: </li>
         <li class="technology" ng-repeat="technology in project.technologies">{{technology}}</li>
       </ul>
       <ul class="repos">

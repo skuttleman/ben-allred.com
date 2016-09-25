@@ -1,5 +1,6 @@
 .image-container {
   width: 100vw;
+  overflow: hidden;
   height: calc(100vh - #{$HEADER-HEIGHT});
   position: fixed;
   top: $HEADER-HEIGHT;
