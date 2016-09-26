@@ -14,7 +14,7 @@
       <img class="bg-image" ng-src="{{backgroundImage}}" />
     </div>
     <header personal-header view="view"></header personal-header>
-    <main class="app {{view}}" ng-view></main>
+    <main class="app {{view}}" ng-class="{ 'bottom-margin': showMusicPlayer }" ng-view></main>
     <div music-player ng-if="showMusicPlayer"></div>
   </body>
 </html>

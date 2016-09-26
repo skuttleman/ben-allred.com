@@ -1,19 +1,35 @@
 <div class="music-player">
   <audio ng-show="false" class="audio-controls" controls></audio>
-  <div class="song-list" ng-click="isExpanded = !isExpanded">
-    <span class="now-playing" ng-hide="isExpanded">{{currentSong.title || 'None'}}</span>
-    <ul class="songs" ng-show="isExpanded">
+  <div class="song-list" ng-if="isExpanded">
+    <ul class="songs">
       <li class="song" ng-repeat="song in songs" ng-class="{ selected: currentSong == song }" ng-click="selectSong(song)">
         {{song.title}}
       </li>
     </ul>
   </div>
-  <div class="play-pause" ng-click="playPause()">(&gt;)</div>
-  <a ng-href="{{currentAlbum.itunes}}" target="_blank">
-    <img class="album-cover" ng-src="{{currentAlbum.art}}" alt="album cover" />
-  </a>
-  <a ng-href="{{currentAlbum.itunes}}" target="_blank">
-    <img class="itunes-button" src="/music/itunes.png" alt="itunes button" />
-  </a>
-  <span ng-click="close()">(X)<span>
+  <div class="controls">
+    <div class="now-playing" ng-click="isExpanded = !isExpanded">
+      {{currentSong.title || 'Select a Song' | limit:15}}
+      <i class="fa" ng-class="{ 'fa-caret-up': !isExpanded, 'fa-caret-down': isExpanded }"></i>
+    </div>
+    <div class="button-container" ng-if="currentSong">
+      <div class="button play-pause" ng-click="playPause()">
+        <i class="fa" ng-class="{ 'fa-play': !playing && currentSong, 'fa-pause': playing }"></i>
+      </div>
+    </div>
+    <a ng-if="currentSong" ng-href="{{currentAlbum.itunes}}" target="_blank">
+      <img class="album-cover" ng-src="{{currentAlbum.art}}" alt="album cover" />
+    </a>
+    <a ng-if="currentSong" ng-href="{{currentAlbum.itunes}}" target="_blank">
+      <div class="button itunes">
+        <i class="fa fa-apple"></i>
+        <span>iTunes</span>
+      </div>
+    </a>
+    <div class="button-container">
+      <div class="button close" ng-click="close()">
+        <i class="fa fa-times"></i>
+      </div>
+    </div>
+  </div>
 </div>

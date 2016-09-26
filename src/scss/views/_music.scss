@@ -1,0 +1,18 @@
+.app.music {
+  .below-the-fold {
+    .open-music-player {
+      border-radius: 2px;
+      background-color: $LINK-BLUE;
+      &:active {
+        box-shadow: inset 1px 1px 1px $BLACK;
+      }
+      &:hover {
+        color: $WHITE;
+      }
+      i {
+        margin-left: 5px;
+        transform: rotate(180deg);
+      }
+    }
+  }
+}

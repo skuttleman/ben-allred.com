@@ -1,0 +1,9 @@
+.button {
+  cursor: pointer;
+  padding: 5px 10px;
+  display: inline-block;
+  transition: color 0.2s ease;
+  &:active {
+    padding: 6px 9px 4px 11px;
+  }
+}

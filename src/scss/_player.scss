@@ -1,11 +1,90 @@
 .music-player {
+  min-width: 320px;
+  max-width: 100vw;
   background-color: $LIGHT-GREY;
-  display: flex;
-  flex-direction: row;
   position: fixed;
   bottom: 0;
-  right: 0;
-  img {
-    height: 35px;
+  left: 0;
+  .song, .now-playing {
+    cursor: pointer;
+  }
+  .song-list {
+    overflow: hidden;
+    padding: $MAIN-PADDING;
+    box-shadow: inset 1px 1px 5px $GREY;
+    border: 1px solid $GREY;
+    &.ng-leave {
+      transition: 0.25s linear;
+      height: 70px;
+    }
+    &.ng-leave.ng-leave-active {
+      height: 0;
+    }
+    &.ng-enter {
+      transition: 0.25s linear;
+      height: 0;
+    }
+    &.ng-enter.ng-enter-active {
+      height: 70px;
+    }
+    .song {
+      transition: color 0.2s ease;
+      &:hover {
+        color: $LINK-BLUE;
+      }
+    }
+  }
+  .controls {
+    height: $PLAYER-HEIGHT;
+    padding: 0 5px 0 $MAIN-PADDING;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: space-between;
+    *:first-child {
+      flex-grow: 1;
+    }
+    *:last-child {
+      align-self: flex-start;
+    }
+    *:not(:last-child) {
+      margin-right: 5px;
+    }
+    img {
+      height: calc(#{$PLAYER-HEIGHT} - 5px);
+    }
+    .itunes.button {
+      border-radius: 2px;
+      background-color: $DARK-GREY;
+      color: $LIGHT-GREY;
+      text-decoration: none;
+      span {
+        font-size: 0.66rem;
+      }
+      &:hover {
+        color: $WHITE;
+      }
+    }
+    .button {
+      &:hover {
+        color: $GREY;
+      }
+      &.play-pause, &.close {
+        display: flex;
+        justify-content: center;
+      }
+      &.play-pause {
+        align-items: center;
+        width: 15px;
+      }
+      &.close {
+        align-items: flex-start;
+        padding: 1px;
+        &:active {
+          padding: 2px 0 0 2px;
+        }
+      }
+    }
   }
 }

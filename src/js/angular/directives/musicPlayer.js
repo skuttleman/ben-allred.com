@@ -19,6 +19,7 @@ const selectSong = ($scope, albumsAPI) => song => {
   $scope.currentSong = song;
   playSong(song.src);
   $scope.playing = true;
+  $scope.isExpanded = false;
   albumsAPI.get(song.albumId).then(({ data }) => $scope.currentAlbum = data);
 };
 
