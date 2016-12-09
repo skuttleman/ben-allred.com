@@ -13,8 +13,5 @@ app.config(['$routeProvider', $routeProvider => {
   }).when('/music', {
     templateUrl: '/templates/music.html',
     controller: 'MusicController'
-  }).when('/api', {
-    templateUrl: '/templates/api.html',
-    controller: 'ApiController'
   }).otherwise('/');
 }]);

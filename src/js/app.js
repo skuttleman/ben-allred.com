@@ -1,3 +1,4 @@
+import './utils/object-helpers';
 import './angular/config';
 import './angular/services';
 import './angular/controllers';

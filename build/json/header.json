@@ -16,10 +16,6 @@
     "text": "music",
     "iClass": "fa fa-music"
   },{
-    "link": "#/api",
-    "text": "api",
-    "iClass": "fa fa-code"
-  },{
     "link": "https://docs.google.com/document/d/1JWDF64xzcW-KJVxNyq5I8TJ3pMdS1fVdv_oKDuMLago/export?format=pdf&id=1JWDF64xzcW-KJVxNyq5I8TJ3pMdS1fVdv_oKDuMLago",
     "text": "resume",
     "iClass": "fa fa-download"

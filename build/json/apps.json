@@ -36,7 +36,7 @@
         "link": "/stumblr"
       }
     ],
-    "link": "http://stumblr.club/",
+    "link": "http://stumblr-club.herokuapp.com/",
     "tagLine": "Map an Epic Pub Crawl. Right Here. Right Now.",
     "description": "Some friends and I made @stumblr_app so we could have an app that we could use to go out and celebrate the app we were making. We thought it would be fun to interface with Google Maps API and Twitter API to let users find some nearby bars to go to and tweet about it. Earn fun badges as you go. #stumblr",
     "technologies": [

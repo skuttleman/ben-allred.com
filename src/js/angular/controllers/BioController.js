@@ -1,9 +1,9 @@
-const BioController = ($scope, $rootScope, biosAPI) => {
+const BioController = ($scope, $rootScope, loadJSON) => {
   $rootScope.view = 'bio';
   $rootScope.backgroundImage = '/images/hiking.jpg';
-  biosAPI.get().then(({ data: bios }) => {
-    $scope.bios = bios;
+  loadJSON.load('bios').then(({ data }) => {
+    $scope.bios = data.bios;
   });
 };
 
-export default ['$scope', '$rootScope', 'biosAPI', BioController];
+export default ['$scope', '$rootScope', 'loadJSON', BioController];

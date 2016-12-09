@@ -15,17 +15,22 @@ const playPause = $scope => {
   }
 };
 
-const selectSong = ($scope, albumsAPI) => song => {
+const selectSong = $scope => song => {
   $scope.currentSong = song;
   playSong(song.src);
   $scope.playing = true;
   $scope.isExpanded = false;
-  albumsAPI.get(song.albumId).then(({ data }) => $scope.currentAlbum = data);
+  $scope.currentAlbum = $scope.albums.find(album => album.id === song.albumId)
 };
 
-const MusicPlayerController = ($rootScope, $scope, songsAPI, albumsAPI) => {
-  songsAPI.get().then(({ data }) => $scope.songs = data);
-  $scope.selectSong = selectSong($scope, albumsAPI);
+const MusicPlayerController = ($rootScope, $scope, loadJSON) => {
+  loadJSON.load('albums').then(({ data }) => {
+    $scope.albums = data.albums;
+  });
+  loadJSON.load('songs').then(({ data }) => {
+    $scope.songs = data.songs;
+  });
+  $scope.selectSong = selectSong($scope);
   $scope.playPause = () => playPause($scope);
   $scope.close = () => $rootScope.showMusicPlayer = false;
 };
@@ -34,6 +39,6 @@ export default () => {
   return {
     restrict: 'AE',
     templateUrl: '/templates/player.html',
-    controller: ['$rootScope', '$scope', 'songsAPI', 'albumsAPI', MusicPlayerController]
+    controller: ['$rootScope', '$scope', 'loadJSON', MusicPlayerController]
   };
 };

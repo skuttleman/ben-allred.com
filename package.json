@@ -13,7 +13,8 @@
   "dependencies": {
     "angular": "^1.5.8",
     "angular-animate": "^1.5.8",
-    "angular-route": "^1.5.8"
+    "angular-route": "^1.5.8",
+    "json-pretty": "0.0.1"
   },
   "devDependencies": {
     "babel-core": "^6.4.5",
