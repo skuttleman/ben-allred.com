@@ -1,23 +1,10 @@
 {
   "bios": [{
-    "id": 1,
-    "header": "My Past",
+    "header": "My Story",
     "paragraphs": [
-      "When I was five years old, my father showed me the code to a computer program he had written in BASIC for an intro to programming class. I don't know if I was acutely aware of it at the time, but ever since that moment I have been fascinated with software development. If a computer can take some sort of input, process that information, and provide some kind of output, then all I needed to do was learn to write lines of code and I could make a computer do anything I could imagine.",
-      "My fascination with computers, though waxing and waning for periods of time, never died. And even as my life and career took various twists and turns, a computer was something that was always in my inventory, so I always had something with which to tinker."
-    ]
-  },{
-    "id": 2,
-    "header": "My Present",
-    "paragraphs": [
-      "I only became aware of \"bootcamp\" style learn-to-code programs, when a friend of mine informed me that he decided to quit his job and give it a shot. The notion intrigued me. Over the years I had ocassionally been visited by the thought that I might be doing something more enjoyable with my career if I had gone a route that led me into software development. However, the possibility of pursuing those ideas always seemed locked behind a going-back-to-college door, and I was never in a financial place where that was feasible.",
-      "After hearing the news that bootcamp programs exist for full stack web development and that my close friend was going to be attending one, I suddenly found myself across the event horizon. It was inevetible that I pursue my interest in software development through Galvanize's full stack web development program."
-    ]
-  },{
-    "id": 3,
-    "header": "My Future",
-    "paragraphs": [
-      "As I emerge from coding bootcamp, I feel armed with the tools to enter the field of web development. Whether I am applying what I already know or learning to work with new technologies, I know I'm going to succeed."
+      "I have always enjoyed writing code. I was introduced to the basics of coding when I was five years old. Throughout my life, other interests came and went, but I always found ways to incorporate coding into my other hobbies. However, my ability to write code had been self taught, and I knew I was never going to be able to transition to a career as a developer without schooling. For a long time, I equated that to four or more years of college which was time and money I couldn't afford. Then, I heard about \"coding bootcamps\".",
+      "In the fall of 2015, I attended Galvanize's Full Stack Web Developer program, a bootcamp style learn-to-code course. I spent eight or more hours every day for six months coding browser-based applications, building web servers, interacting with databases, consuming third-party APIs, and learning about build tools and frameworks. If it wasn't for Galvanize, I wouldn't have had the opportunity to become a professional developer.",
+      "In the spring of 2016, I began working for DISH as a web developer. I didn't expect to stop learning after Galvanize, but for some reason I thought the challenges and the rate of learning new things would settle to a more sustainable pace. I was wrong. At DISH, I have continued to grow as a developer which is exactly what I said I wanted when I started working there. Putting my life on hold for six months to go to coding bootcamp was a scary proposition. Will I succeed? Can I get a job? Will I enjoy this carreer change? Luckily for me, it was one of the best decisions I've made in my entire life, and I can't wait to see where my life takes me because of it."
     ]
   }]
 }
