@@ -1,103 +1,108 @@
 {
   "apps": [{
-    "id": 1,
-    "title": "The Legend of Tilde",
-    "repos": [
-      {
+      "id": 1,
+      "title": "The Legend of Tilde",
+      "repos": [{
         "name": "front-end repo",
         "link": "/capstone-front-end"
-      },{
+      }, {
         "name": "server repo",
         "link": "/capstone-server"
-      },{
+      }, {
         "name": "db repo",
         "link": "/capstone-db"
-      }
-    ],
-    "link": "https://legendoftilde.com",
-    "tagLine": "Sometimes just communicating can be the hardest part.",
-    "description": "The Hero of Runtime, Hyperlink, and the beautiful Princess Tilde have to work together to escape the dungeon under the kingdom of Hyphen. The Legend of Tilde is a cooperative puzzle game where two players have to establish a means of communication in order to help each other escape the dungeon. Future plans include community made levels and a ratings and friends system.",
-    "technologies": [
-      "socket.io",
-      "phaser",
-      "node/express",
-      "angular",
-      "mongo db",
-      "mysql",
-      "foundation",
-      "twilio"
-    ]
-  },{
-    "id": 2,
-    "title": "Stumblr",
-    "repos": [
-      {
+      }],
+      "link": "https://g15-capstone.firebaseapp.com",
+      "tagLine": "Sometimes just communicating can be the hardest part.",
+      "description": "The Hero of Runtime, Hyperlink, and the beautiful Princess Tilde have to work together to escape the dungeon under the kingdom of Hyphen. The Legend of Tilde is a cooperative puzzle game where two players have to establish a means of communication in order to help each other escape the dungeon. Future plans include community made levels and a ratings and friends system.",
+      "technologies": [
+        "socket.io",
+        "phaser",
+        "node/express",
+        "angular",
+        "mongo db",
+        "mysql",
+        "foundation",
+        "twilio"
+      ]
+    }, {
+      "id": 2,
+      "title": "Git Push It",
+      "repos": [{
+        "name": "repo",
+        "link": "/git-push-it"
+      }],
+      "link": "https://www.npmjs.com/package/git-push-it",
+      "tagLine": "A fun plugin for 'git'.",
+      "description": "An open source project for playing appropriate music while pushing your code with git.",
+      "technologies": [
+        "git",
+        "npm"
+      ]
+    }, {
+      "id": 3,
+      "title": "Stumblr",
+      "repos": [{
         "name": "repo",
         "link": "/stumblr"
-      }
-    ],
-    "link": "http://stumblr-club.herokuapp.com/",
-    "tagLine": "Map an Epic Pub Crawl. Right Here. Right Now.",
-    "description": "Some friends and I made @stumblr_app so we could have an app that we could use to go out and celebrate the app we were making. We thought it would be fun to interface with Google Maps API and Twitter API to let users find some nearby bars to go to and tweet about it. Earn fun badges as you go. #stumblr",
-    "technologies": [
-      "google maps",
-      "twitter",
-      "node/express",
-      "mongo db",
-      "react",
-      "bootstrap"
-    ]
-  },{
-    "id": 3,
-    "title": "Planit",
-    "repos": [
-      {
+      }],
+      "link": "http://stumblr-club.herokuapp.com/",
+      "tagLine": "Map an Epic Pub Crawl. Right Here. Right Now.",
+      "description": "Some friends and I made @stumblr_app so we could have an app that we could use to go out and celebrate the app we were making. We thought it would be fun to interface with Google Maps API and Twitter API to let users find some nearby bars to go to and tweet about it. Earn fun badges as you go. #stumblr",
+      "technologies": [
+        "google maps",
+        "twitter",
+        "node/express",
+        "mongo db",
+        "react",
+        "bootstrap"
+      ]
+    }, {
+      "id": 4,
+      "title": "Planit",
+      "repos": [{
         "name": "server/front-end repo",
         "link": "/planit-server"
-      },{
+      }, {
         "name": "db repo",
         "link": "/planit-db"
-      }
-    ],
-    "link": "http://www.planit.space/",
-    "tagLine": "Universal Event Planning",
-    "description": "This was a group project made during my full stack web development program at Galvanize. Users can come together to work on organizing and taking part in events. While organizing an event you can create tasks, and then others can submit bids / proposals to get chosen for your project team.",
-    "technologies": [
-      "postgreSQL",
-      "node/express",
-      "handlebars",
-      "jQuery",
-      "bootstrap"
-    ]
-  },{
-    "id": 4,
-    "title": "Space Raptors",
-    "repos": [
-      {
+      }],
+      "link": "http://www.planit.space/",
+      "tagLine": "Universal Event Planning",
+      "description": "This was a group project made during my full stack web development program at Galvanize. Users can come together to work on organizing and taking part in events. While organizing an event you can create tasks, and then others can submit bids / proposals to get chosen for your project team.",
+      "technologies": [
+        "postgreSQL",
+        "node/express",
+        "handlebars",
+        "jQuery",
+        "bootstrap"
+      ]
+    }, {
+      "id": 5,
+      "title": "Space Raptors",
+      "repos": [{
         "name": "repo",
         "link": "/space-raptors"
-      }
-    ],
-    "tagLine": "Defeat the carnivorous raptors. The universe needs you.",
-    "description": "A game-jam style group project primarily built over a week and a half. Most people on the team, myself included, had any prior experience with either Unity3D or making games. My primary contribution was enemy AI.",
-    "technologies": [
-      "unity3d"
-    ]
-  },{
-    "id": 5,
-    "title": "Pizza Time",
-    "repos": [
-      {
+      }],
+      "tagLine": "Defeat the carnivorous raptors. The universe needs you.",
+      "description": "A game-jam style group project primarily built over a week and a half. Most people on the team, myself included, had any prior experience with either Unity3D or making games. My primary contribution was enemy AI.",
+      "technologies": [
+        "unity3d"
+      ]
+    }, {
+      "id": 6,
+      "title": "Pizza Time",
+      "repos": [{
         "name": "front-end repo",
         "link": "/pizzatime"
-      }
-    ],
-    "link": "https://pizzatime.firebaseapp.com/",
-    "tagLine": "The World's Most Accurate Clock",
-    "description": "In a time that I was learning a ton about server-side programming, I wanted to see if I could still do something fully front-end. I threw this together in an hour or so in response to a joke that emerged early that day among my friends. Is it weird that I'm more proud of this than anything else in my portfolio?",
-    "technologies": [
-      "scss",
-      "jQuery"
-    ]
-  }]
+      }],
+      "link": "https://pizzatime.firebaseapp.com/",
+      "tagLine": "The World's Most Accurate Clock",
+      "description": "In a time that I was learning a ton about server-side programming, I wanted to see if I could still do something fully front-end. I threw this together in an hour or so in response to a joke that emerged early that day among my friends. Is it weird that I'm more proud of this than anything else in my portfolio?",
+      "technologies": [
+        "scss",
+        "jQuery"
+      ]
+    }
+  ]
 }

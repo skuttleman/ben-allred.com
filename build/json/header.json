@@ -3,19 +3,19 @@
     "link": "#/home",
     "text": "home",
     "iClass": "fa fa-home"
-  },{
+  }, {
     "link": "#/bio",
     "text": "bio",
     "iClass": "fa fa-info-circle"
-  },{
+  }, {
     "link": "#/portfolio",
     "text": "portfolio",
     "iClass": "fa fa-folder-open"
-  },{
+  }, {
     "link": "#/music",
     "text": "music",
     "iClass": "fa fa-music"
-  },{
+  }, {
     "link": "https://docs.google.com/document/d/1JWDF64xzcW-KJVxNyq5I8TJ3pMdS1fVdv_oKDuMLago/export?format=pdf&id=1JWDF64xzcW-KJVxNyq5I8TJ3pMdS1fVdv_oKDuMLago",
     "text": "resume",
     "iClass": "fa fa-download"
@@ -23,10 +23,10 @@
   "links": [{
     "link": "http://www.github.com/skuttleman",
     "iClass": "fa fa-github-square"
-  },{
+  }, {
     "link": "http://www.linkedin.com/in/allredbd",
     "iClass": "fa fa-linkedin-square"
-  },{
+  }, {
     "link": "http://www.reasonabout.co",
     "iClass": "fa fa-pencil-square"
   }]
