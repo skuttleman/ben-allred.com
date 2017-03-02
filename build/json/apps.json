@@ -84,6 +84,7 @@
         "name": "repo",
         "link": "/space-raptors"
       }],
+      "link": "http://www.raptors.space/",
       "tagLine": "Defeat the carnivorous raptors. The universe needs you.",
       "description": "A game-jam style group project primarily built over a week and a half. Most people on the team, myself included, had any prior experience with either Unity3D or making games. My primary contribution was enemy AI.",
       "technologies": [
